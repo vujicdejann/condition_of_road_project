@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: bored-box;
+}
+
+body {
+	background: rgb(230,154,21);
+	background: linear-gradient(90deg, rgba(230,154,21,1) 0%, rgba(236,207,31,1) 56%, rgba(223,200,66,1) 100%);
+	height: 100%
+}
+
+.login-form {
+	border: 1px solid white;
+	padding: 5%;
+}
+
+.login-form > form {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.add-form {
+	border: 1px solid white;
+	padding: 2%;	
+}
+
+.add-form > form {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+tr > th,
+tr > td {
+	text-align: center;
+}
+
+.logout-btn {
+	margin-top: 24%;
+	margin-left: 1%;
+}
+
+.logout-btn2 {
+		margin-left: 1%;
+}

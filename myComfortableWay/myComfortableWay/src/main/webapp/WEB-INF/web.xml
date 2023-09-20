@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>myComfortableWay</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Configure servlet mappings -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>myComfortableWay.LoginServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <enabled>true</enabled>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>addSituationServlet</servlet-name>
+        <servlet-class>myComfortableWay.addSituationServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <enabled>true</enabled>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>filterCrossingsServlet</servlet-name>
+        <servlet-class>myComfortableWay.filterCrossingsServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <enabled>true</enabled>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>addSituationServlet</servlet-name>
+        <url-pattern>/addSituationServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>filterCrossingsServlet</servlet-name>
+        <url-pattern>/filterCrossingsServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
